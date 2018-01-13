@@ -1,0 +1,5 @@
+(1) 配置install目录
+./configure --prefix=/tmp/libpath
+(2)编译和安装： make && make install
+(3)将/tmp/libpath目录中的include文件和lib对应的.a文件加入到项目中
+(4) 编译的时候增加对应的include目录(-I)，链接的时候增加对应的库(-l)

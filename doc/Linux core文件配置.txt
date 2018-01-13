@@ -1,0 +1,6 @@
+1.在/etc/profile上增加一行：ulimit -c unlimited
+然后source /etc/profile
+2. 配置core文件的路径：
+echo /data/coredump/core_%e_%p > /proc/sys/kernel/core_pattern
+将更改core文件的生成路径，自动放在这个/data/coredump文件夹里。
+%e表示程序名，%p表示进程ID
